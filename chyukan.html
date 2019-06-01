@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>                                               <!--html要素の閉じタグまでhtml文章の始まりと終わりを示している。-->
+  <head>                                             <!--head要素の閉じタグまでブラウザには表示されない、HTML文章の情報が記述される。-->
+    <meta charset="utf-8">                           <!--meta要素は文章に関する情報を指定する。charset=に続く文字は文章の「文字コード」を指定する。-->
+    <title>テスト</title>                             <!--title要素はサイトのタイトルを付ける。-->
+    <link rel="stylesheet" href="./answer1.css">      <!--link要素はスタイルシートを指定する。rel属性はリンク先となるリソースの位置づけを表す。href属性はリンク先を参照する。-->
+  </head>
+  <body>                                             <!--body要素の開始タグと閉じタグの間にHTMLの文章を記述し、これがブラウザに表示される。-->
+    <header class="header">                          <!--header要素は文書のヘッダを表す。-->
+      <ul class="lists">                             <!--ul要素は項目を順不同・並列的に列挙することを示す。-->
+        <li class="list">HOME</li>                   <!--li要素はリストの項目を表す。ブロック要素とインライン要素のどちらも含むことができる。-->
+        <li class="list">ABOUT</li>
+        <li class="list list--black">CONTACT</li>
+      </ul>
+    </header>
+    <div class="contents">                           <!--div要素の閉じタグまでひとかたまりの範囲として定義することができる。-->
+      <div class="left-content">
+        <div class="blue-content"></div>
+      </div>
+      <div class="right-content"></div>
+    </div>
+  </body>
+</html>

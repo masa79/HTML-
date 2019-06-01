@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {                    
+  background-color: blue;
+  height: 180px; 
+  position: fixed;
+  width: 100%;          
+}
+
+
+.header-left {                    
+  background-color: pink;
+  height: 100%;
+  float: left;            
+  width: 300px;
+}
+
+
+.contents {                    
+  background-color: gray;
+  height: calc(100% - 180px);   /* calcで演算を行うことができ、幅、高さの指定の際に使える */
+  padding-top: 180px;
+  width: 100%;
+}
+
+
+.left-content {                    
+  background-color: red;
+  height: 100%;
+  width: 300px;
+  float: left
+}
+
+
+.contents-main {
+  height: 100%;
+  width: calc(100% - 300px);
+  float: right;
+  position: relative;
+}
+
+
+.footer {                    
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+

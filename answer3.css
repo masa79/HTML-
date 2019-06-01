@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  background-color: purple;
+  height: 70px;
+  position: fixed;
+  width: 100%
+}
+
+.contents {
+  background-color: red;
+  height: 800px;
+  width: 960px;
+  margin:0 auto;   /* 記述する前はcontentsがページの左端にあったが記述後、ページの中央に移動した。margin:0 autoで中央に余白ができる */
+  padding: 70px 0px 45px   /* 記述する前はheaderとfooterにcontentsが被っていたが、記述後は上部70px,下部45pxの余白が出来た */
+}
+
+.top-content {
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  margin: auto;   /* margin: auto;で中央に配置できる */
+}
+
+.left-content {
+  background-color: yellow;
+  float: left;
+  height: 200px;
+  width: 50%;
+}
+
+.right-content {
+  background-color: gray;
+  float: right;
+  height: 200px;
+  width: 50%;
+}
+
+.bottom-content {
+  background-color: green;
+  clear: both;   /* clearプロパティは、要素が先行する浮動要素の下に移動 (clear) する必要があるかどうかを設定する。both要素は先行する左右両方のフロートと切り離され、下に移動する。 */
+  height: 300px;
+  width: 600px;
+  margin: auto;   /* margin: auto;で中央に配置できる */
+}
+
+.footer {
+  background-color: purple;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+

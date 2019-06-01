@@ -1,0 +1,70 @@
+html, body {                    /* html要素、body要素を指定 */
+  height: 100%;                 /* heightは要素の高さを決める。この場合はサイト全体の高さを決める */
+  margin: 0;                    /* 要素の内容を囲んでいるボックスの外側の余白を決める */
+  padding: 0;                   /* 要素の内容を囲んでいるボックスの内側の余白を決める */
+}
+
+ul {                            /* ul要素を指定*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {                      /* header要素を指定 */
+  position: fixed;             /* positionで要素の基準の位置を決めることができる。fixedで画面の決まった位置に要素を固定することができる。 */
+  width: 100%;                 /* widthで要素の横幅を決めることができる*/
+  z-index: 1;                  /* z-indexはボックスの重なりの優先順位を指定する。値は整数で入力し、大きい数値のものほど手前に表示される。 */
+}
+
+.list {                          /* 要素listを指定。li内のそれぞれの文字を指定する */
+  background-color: yellow;    /* background-colorは背景色を指定する。 */
+  float: left;                   /* floatは要素を横並びにすることができる。leftを用いることで要素を左寄せにする。*/
+  font-size: 20px;               /* フォントサイズを指定する。pxはスクリーンの1ピクセルの長さを1pxとした単位で絶対値である。 */
+  font-weight: bold;             /* font-weightは文字の太さを指定できる。bold値に設定することで太字にできる。 */
+  height: 60px;
+  line-height: 60px;             /* line-heightは行の高さを指定する。*/
+  list-style: none;              /* list-styleはリスト内の各項目の先頭に表示されるマーカーを設定することができる。noneは設定を消す時に使用する。*/
+  text-align: center;            /* text-alignはテキストの水平方向への配置を指定する。centerではテキストを中央揃えにする。 */
+  width: 33%;
+}
+
+.list--black {                   /* 要素list-blackを指定。 */
+  background-color: black;
+  color: yellow;
+  width: 34%;
+}
+
+.contents {                      /* 要素contentsを指定。 */
+  background-color: gray;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 60px;             /* 要素の内容を囲んでいるボックスの内側において上部の余白高さを設定する。 */
+  width: 960px;
+}
+
+.left-content {                  /* 要素left-contentを指定。 */
+  background-color: red;
+  float: left;
+  height: 300px;
+  position: relative;            /* relativeにすることで現在の位置から相対的に要素の位置を動かすことができる。 */
+  width: 300px;
+}
+
+.blue-content {                  /* 要素blue-contentを指定。 */
+  background-color: blue;
+  height: 200px;
+  position: absolute;            /* absoluteは親要素を基準に、絶対的な位置を指定する。 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;                  /* margin: autoを用いることで要素を中央揃えにする。 */
+  width: 200px;
+}
+
+.right-content {
+  background-color: green;
+  float: right;
+  height: 500px;
+  width: 200px;
+}

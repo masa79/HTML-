@@ -1,0 +1,55 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+
+/* ここからCSSを記述してください */
+body {
+}
+.header {
+  background-color: #0C316A;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;   /* 属性を左側に配置 */
+  font-size: 36px;
+  padding: 18px 50px 18px 40px;    /* 上18px, 右50px, 下18px, 40px の空間を文字の外側に作る */
+}
+
+.header-list {
+  float: left; 
+}
+
+.header-list li {
+  float: left;   /* 属性を左側に配置 */
+  padding: 33px 10px;
+}
+
+.header-exit {
+  float: right;   /* 属性を右側に配置 */
+  font-size: 26px;
+  padding: 25px 40px;   /* 上下に25px, 左右に40pxの空間を文字の外側に作る */
+}
+
+.contents {
+  background-color: #CD5949;
+  height: 200px;
+}
+
+.contents h1 {
+  background-color: #CD5949;
+  height: 200px;
+  color: #fff;   /* 文字色を白色に変更 */
+  text-align: center;   /* 文字を左右中央に配置 */
+  line-height: 200px;   /* 行の高さを200pxの位置に設定 */
+}
